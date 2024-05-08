@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+                <div class="circle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </nav>
+            <img src="468-thumbnail.png" alt="img" class="song-img">
+            <h1>EastSide</h1>
+            <p>Benny Blanco</p>
+
+            <audio id="song" src="eastside.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div><i class="ri-skip-left-fill"></i></div>
+                <div onclick="playPause()"><i class="ri-play-large-fill" id="ctrlIcon"></i></div>
+                <!-- <i class="ri-pause-line"></i> -->
+                <div><i class="ri-skip-right-fill"></i></div>
+            </div>
+        </div> 
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
